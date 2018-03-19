@@ -13,7 +13,7 @@ arguments :strict
 
 desc 'Example command to understand how everything works'
 # arg_name 'name compliment'
-command :sayHi do |c|
+command :sayhi do |c|
 	c.desc 'You are amazing'
 	c.switch :a
 
