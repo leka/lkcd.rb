@@ -9,7 +9,12 @@ require 'sayhi'
 require 'combine'
 require 'divide'
 require 'json'
+
 require 'LKDir'
+include LKDir
+
 require 'LKRegexp'
+include LKRegexp
+
 require 'pdf'
 

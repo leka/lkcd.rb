@@ -1,8 +1,8 @@
 module LKDir
 
-	output_dir = './tmp'
+	OUTPUT_DIR = './tmp'
 	# output_file = "#{$language}.#{$curriculum}.md"
-	tmp_file = "tmp.md"
-	lesson_dir = './lessons'
+	TMP_FILE = "tmp.md"
+	LESSON_DIR = './lessons'
 
 end

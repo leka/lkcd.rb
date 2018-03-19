@@ -3,10 +3,12 @@ require 'gli'
 require 'lkcd'
 
 include GLI::App
+include LKDir
 
 program_desc 'Command Line Tool to manage Leka\'s Curriculum data'
 
-version Lkcd::VERSION
+# version Lkcd::VERSION
+version "1.1.1"
 
 subcommand_option_handling :normal
 arguments :strict
@@ -34,9 +36,52 @@ end
 
 desc 'Describe pdf here'
 arg_name 'Describe arguments to pdf here'
-command :pdf do |c|
+command :combine do |c|
 	c.action do |global_options,options,args|
 		puts "pdf command ran"
+	end
+end
+
+desc 'Describe pdf here'
+arg_name 'Describe arguments to pdf here'
+command :divide do |c|
+	c.action do |global_options,options,args|
+		puts "pdf command ran"
+	end
+end
+
+desc 'Describe pdf here'
+arg_name 'Describe arguments to pdf here'
+command :json do |c|
+	c.action do |global_options,options,args|
+		puts "pdf command ran"
+	end
+end
+
+desc 'Describe pdf here'
+arg_name 'Describe arguments to pdf here'
+command :docx do |c|
+	c.action do |global_options,options,args|
+		puts LKDir::OUTPUT_DIR
+		puts Lkcd::VERSION
+		puts "pdf command ran"
+	end
+end
+
+desc 'Describe pdf here'
+arg_name 'Describe arguments to pdf here'
+command :pdf do |c|
+
+	c.desc 'The curriculum language'
+	c.flag [:l, :lang, :language]
+
+	c.desc 'The curriculum number'
+	c.flag [:c, :curriculum]
+
+	c.action do |global_options,options,args|
+
+		pdf(options[:language], options[:curriculum])
+
 	end
 end
 

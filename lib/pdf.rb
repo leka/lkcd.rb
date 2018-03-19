@@ -1,12 +1,12 @@
-def pdf()
+def pdf(language, curriculum)
 
-	unless File.directory?($output_dir)
-		FileUtils.mkdir_p($output_dir)
+	unless File.directory?(LKDir::OUTPUT_DIR)
+		FileUtils.mkdir_p(LKDir::OUTPUT_DIR)
 	end
 
-	lessons = Dir.glob("#{$lesson_dir}/**/#{$language}.#{$curriculum}l*.md")
+	lessons = Dir.glob("#{LKDir::LESSON_DIR}/**/#{language}.#{curriculum}l*.md")
 
-	File.open("#{$output_dir}/#{$tmp_file}", 'w') { |file| file.write('') }
+	File.open("#{LKDir::OUTPUT_DIR}/#{LKDir::TMP_FILE}", 'w') { |file| file.write('') }
 
 	puts "Combining the following files:\n\n"
 
@@ -17,7 +17,7 @@ def pdf()
 		lesson_name = File.basename(lesson)
 		lesson_content = File.read(lesson)
 
-		File.open("#{$output_dir}/#{$tmp_file}", 'a') { |file|
+		File.open("#{LKDir::OUTPUT_DIR}/#{LKDir::TMP_FILE}", 'a') { |file|
 
 			file.puts(lesson_content)
 
@@ -29,10 +29,10 @@ def pdf()
 
 	end
 
-	puts "\nInto #{$output_dir}/#{$language}.#{$curriculum}.pdf"
+	puts "\nInto #{LKDir::OUTPUT_DIR}/#{language}.#{curriculum}.pdf"
 
-	%x(pandoc #{$output_dir}/#{$tmp_file} -N -o #{$output_dir}/#{$language}.#{$curriculum}.pdf)
+	%x(pandoc #{LKDir::OUTPUT_DIR}/#{LKDir::TMP_FILE} -N -o #{LKDir::OUTPUT_DIR}/#{language}.#{curriculum}.pdf)
 
-	File.delete("#{$output_dir}/#{$tmp_file}")
+	File.delete("#{LKDir::OUTPUT_DIR}/#{LKDir::TMP_FILE}")
 
 end
