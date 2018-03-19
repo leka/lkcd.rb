@@ -1,78 +1,64 @@
 #!/usr/bin/env ruby
 require 'gli'
-begin # XXX: Remove this begin/rescue before distributing your app
 require 'lkcd'
-rescue LoadError
-  STDERR.puts "In development, you need to use `bundle exec bin/lkcd` to run your app"
-  STDERR.puts "At install-time, RubyGems will make sure lib, etc. are in the load path"
-  STDERR.puts "Feel free to remove this message from bin/lkcd now"
-  exit 64
-end
 
 include GLI::App
 
-program_desc 'Describe your application here'
+program_desc 'Command Line Tool to manage Leka\'s Curriculum data'
 
 version Lkcd::VERSION
 
 subcommand_option_handling :normal
 arguments :strict
 
-desc 'Describe some switch here'
-switch [:s,:switch]
-
-desc 'Describe some flag here'
-default_value 'the default'
-arg_name 'The name of the argument'
-flag [:f,:flagname]
-
-desc 'Describe sayHi here'
-arg_name 'Describe arguments to sayHi here'
+desc 'Example command to understand how everything works'
+# arg_name 'name compliment'
 command :sayHi do |c|
-  c.desc 'Describe a switch to sayHi'
-  c.switch :s
+	c.desc 'You are amazing'
+	c.switch :a
 
-  c.desc 'Describe a flag to sayHi'
-  c.default_value 'default'
-  c.flag :f
-  c.action do |global_options,options,args|
+	c.desc 'You are beautiful'
+	c.switch :b
 
-    # Your command logic here
-     
-    # If you have any errors, just raise them
-    # raise "that command made no sense"
+	c.desc 'Your name'
+	c.flag [:n, :name]
+	c.action do |global_options,options,args|
 
-    puts "sayHi command ran"
-  end
+		compliment = options[:a] ? 'You are amazing. ' : ''
+		compliment += options[:b] ? 'You are beautiful. ' : ''
+
+		puts "Hello #{sayHi(options[:name]) + ". " + compliment}"
+
+	end
 end
 
 desc 'Describe pdf here'
 arg_name 'Describe arguments to pdf here'
 command :pdf do |c|
-  c.action do |global_options,options,args|
-    puts "pdf command ran"
-  end
+	c.action do |global_options,options,args|
+		puts "pdf command ran"
+	end
 end
 
 pre do |global,command,options,args|
-  # Pre logic here
-  # Return true to proceed; false to abort and not call the
-  # chosen command
-  # Use skips_pre before a command to skip this block
-  # on that command only
-  true
+	# Pre logic here
+	# Return true to proceed; false to abort and not call the
+	# chosen command
+	# Use skips_pre before a command to skip this block
+	# on that command only
+	true
 end
 
 post do |global,command,options,args|
-  # Post logic here
-  # Use skips_post before a command to skip this
-  # block on that command only
+	# Post logic here
+	# Use skips_post before a command to skip this
+	# block on that command only
 end
 
 on_error do |exception|
-  # Error logic here
-  # return false to skip default error handling
-  true
+	# Error logic here
+	# return false to skip default error handling
+	true
 end
 
 exit run(ARGV)
