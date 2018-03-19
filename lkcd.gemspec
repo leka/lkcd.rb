@@ -3,11 +3,11 @@ require File.join([File.dirname(__FILE__),'lib','lkcd','version.rb'])
 spec = Gem::Specification.new do |s| 
   s.name = 'lkcd'
   s.version = Lkcd::VERSION
-  s.author = 'Your Name Here'
-  s.email = 'your@email.address.com'
-  s.homepage = 'http://your.website.com'
+  s.author = 'Ladislas de Toldi'
+  s.email = 'ladislas@leka.io'
+  s.homepage = 'https://ladislas.detoldi.me'
   s.platform = Gem::Platform::RUBY
-  s.summary = 'A description of your project'
+  s.summary = 'A simple cli to manage lessons and curriculums'
   s.files = `git ls-files`.split("
 ")
   s.require_paths << 'lib'
