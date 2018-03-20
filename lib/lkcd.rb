@@ -19,10 +19,10 @@ include LKDir
 require 'LKRegexp'
 include LKRegexp
 
+require 'curriculums'
+
 require 'LKLabels'
 include LKLabel
-# include LKLabelType
-# include LKLabelStage
 
 require 'pdf'
 

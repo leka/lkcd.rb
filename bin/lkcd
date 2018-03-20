@@ -145,45 +145,29 @@ command :pull do |c|
 		client = Octokit::Client.new(:netrc => true)
 		client.login
 
-# 		if options[:all]
+		issues = client.list_issues('leka/LKCurriculumsData')
 
-# 			type += [LKLabel::Type::LESSON, LKLabel::Type::CURRICULUM]
+		if options[:all]
 
-# 			unless options[:stage].eql? 'ready'
-# 				stage += options[:stage]
-# 			end
+			curs = get_all_curriculums(issues)
+			# type += [LKLabel::Type::LESSON, LKLabel::Type::CURRICULUM]
 
-# 		end
+			# unless options[:stage].eql? 'ready'
+			# 	stage += options[:stage]
+			# end
+
+			# puts curs
+
+		end
+
+
 
 		# labels = (stage + type + curriculums).join(',')
 
 		# puts labels
 
 		# issues = client.list_issues('leka/LKCurriculumsData', :labels => labels)
-		issues = client.list_issues('leka/LKCurriculumsData')
 
-		issues.each do |issue|
-
-			# issue = YAML.load(issue.to_hash.to_yaml)
-
-			issue[:labels].each do |label|
-				label[:name]
-			end
-
-			# yssue = YAML.load(yam)
-			# yssue = "json: " + issue
-			# puts yssue[:labels][:name]
-			# puts YAML.dump(yssue)
-			puts ""
-			# body = issue.body
-			# yaml = YAML.load(body.lines.to_a[2..-1].join)
-
-			# puts yaml["en_US"]["title"]
-
-			# %x(echo "#{yaml["en_US"]["body"]}" | pandoc -o test.md)
-
-			# puts YAML.dump(yaml)
-		end
 
 	end
 end
