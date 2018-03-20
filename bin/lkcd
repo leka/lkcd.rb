@@ -1,17 +1,22 @@
 #!/usr/bin/env ruby
 require 'gli'
 require 'lkcd'
+require 'pp'
+require 'yaml'
+require 'json'
 
 include GLI::App
-include LKDir
 
 program_desc 'Command Line Tool to manage Leka\'s Curriculum data'
 
-# version Lkcd::VERSION
-version "1.1.1"
+version Lkcd::VERSION
 
 subcommand_option_handling :normal
 arguments :strict
+
+accept Array do |value|
+	value.split(/,/).map(&:strip)
+end
 
 desc 'Example command to understand how everything works'
 # arg_name 'name compliment'
@@ -45,8 +50,17 @@ end
 desc 'Describe pdf here'
 arg_name 'Describe arguments to pdf here'
 command :divide do |c|
+
+	c.desc 'The curriculum language'
+	c.flag [:l, :lang, :language]
+
+	c.desc 'The curriculum number'
+	c.flag [:c, :curriculum]
+
 	c.action do |global_options,options,args|
-		puts "pdf command ran"
+
+		divide(options[:language], options[:curriculum])
+
 	end
 end
 
@@ -81,6 +95,95 @@ command :pdf do |c|
 	c.action do |global_options,options,args|
 
 		pdf(options[:language], options[:curriculum])
+
+	end
+end
+
+desc 'Connect your Github account'
+arg_name '-u ladislas -p myP@ssword2018'
+command :connect do |c|
+	c.desc 'Your Github username'
+	c.flag [:u, :username]
+
+	c.desc 'Your Github password or token'
+	c.flag [:p, :password]
+
+	c.action do |global_options,options,args|
+
+		n = Netrc.read
+		n["api.Github.com"] = options[:username], options[:password]
+		n.save
+
+		puts "Successfully saved credentials"
+
+	end
+end
+
+desc 'Pull curriculum and lesson data from Github'
+arg_name '--curriculum=c2 --stage=ready'
+command :pull do |c|
+	c.desc 'The curriculum(s) you want to pull'
+	c.flag [:c, :curriculum],
+		# :must_match =>
+		:type => Array
+
+	c.desc 'The stage of the curriculum'
+	c.flag [:s, :stage],
+		:must_match => ["in progress", "needs review", "ready"],
+		:default_value => "ready",
+		:type => Array
+
+	c.desc 'Pull all curriculums'
+	c.switch [:a, :all, 'all-curriculums'], :negatable => false
+
+	c.action do |global_options,options,args|
+
+		types = []
+		curriculums = []
+		stages = ['ready']
+
+		client = Octokit::Client.new(:netrc => true)
+		client.login
+
+# 		if options[:all]
+
+# 			type += [LKLabel::Type::LESSON, LKLabel::Type::CURRICULUM]
+
+# 			unless options[:stage].eql? 'ready'
+# 				stage += options[:stage]
+# 			end
+
+# 		end
+
+		# labels = (stage + type + curriculums).join(',')
+
+		# puts labels
+
+		# issues = client.list_issues('leka/LKCurriculumsData', :labels => labels)
+		issues = client.list_issues('leka/LKCurriculumsData')
+
+		issues.each do |issue|
+
+			# issue = YAML.load(issue.to_hash.to_yaml)
+
+			issue[:labels].each do |label|
+				label[:name]
+			end
+
+			# yssue = YAML.load(yam)
+			# yssue = "json: " + issue
+			# puts yssue[:labels][:name]
+			# puts YAML.dump(yssue)
+			puts ""
+			# body = issue.body
+			# yaml = YAML.load(body.lines.to_a[2..-1].join)
+
+			# puts yaml["en_US"]["title"]
+
+			# %x(echo "#{yaml["en_US"]["body"]}" | pandoc -o test.md)
+
+			# puts YAML.dump(yaml)
+		end
 
 	end
 end
