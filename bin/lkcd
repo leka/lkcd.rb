@@ -148,15 +148,8 @@ command :pull do |c|
 		issues = client.list_issues('leka/LKCurriculumsData')
 
 		if options[:all]
-
-			curs = get_all_curriculums(issues)
-			# type += [LKLabel::Type::LESSON, LKLabel::Type::CURRICULUM]
-
-			# unless options[:stage].eql? 'ready'
-			# 	stage += options[:stage]
-			# end
-
-			# puts curs
+			get_all_curriculums(issues)
+		else
 
 		end
 
