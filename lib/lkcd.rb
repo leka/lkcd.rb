@@ -9,8 +9,8 @@ require 'octokit'
 
 require 'sayhi'
 
-require 'combine'
-require 'divide'
+# require 'combine'
+# require 'divide'
 require 'json'
 
 require 'LKDir'
@@ -19,10 +19,12 @@ include LKDir
 require 'LKRegexp'
 include LKRegexp
 
-require 'curriculums'
+# require 'curriculums'
 
 require 'LKLabels'
 include LKLabel
 
-require 'pdf'
+require 'LKCurriculumModel'
+
+# require 'pdf'
 

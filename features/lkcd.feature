@@ -5,4 +5,8 @@ Feature: My bootstrapped app kinda works
 
   Scenario: App just runs
     When I get help for "lkcd"
+    Then the exit status should be 1
+
+  Scenario: App just runs
+    When I get help for "lkcd"
     Then the exit status should be 0

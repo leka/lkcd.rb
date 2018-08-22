@@ -1,0 +1,688 @@
+[{:url=>"https://api.github.com/repos/leka/LKCurriculumsData/issues/7",
+ :repository_url=>"https://api.github.com/repos/leka/LKCurriculumsData",
+ :labels_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/7/labels{/name}",
+ :comments_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/7/comments",
+ :events_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/7/events",
+ :html_url=>"https://github.com/leka/LKCurriculumsData/issues/7",
+ :id=>307249419,
+ :number=>7,
+ :title=>"Lesson - C1L2 - Porter attention à Leka / Paying attention to Leka",
+ :user=>
+  {:login=>"ladislas",
+   :id=>2206544,
+   :avatar_url=>"https://avatars1.githubusercontent.com/u/2206544?v=4",
+   :gravatar_id=>"",
+   :url=>"https://api.github.com/users/ladislas",
+   :html_url=>"https://github.com/ladislas",
+   :followers_url=>"https://api.github.com/users/ladislas/followers",
+   :following_url=>
+    "https://api.github.com/users/ladislas/following{/other_user}",
+   :gists_url=>"https://api.github.com/users/ladislas/gists{/gist_id}",
+   :starred_url=>
+    "https://api.github.com/users/ladislas/starred{/owner}{/repo}",
+   :subscriptions_url=>"https://api.github.com/users/ladislas/subscriptions",
+   :organizations_url=>"https://api.github.com/users/ladislas/orgs",
+   :repos_url=>"https://api.github.com/users/ladislas/repos",
+   :events_url=>"https://api.github.com/users/ladislas/events{/privacy}",
+   :received_events_url=>
+    "https://api.github.com/users/ladislas/received_events",
+   :type=>"User",
+   :site_admin=>false},
+ :labels=>
+  [{:id=>872339446,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/0-lesson",
+    :name=>"0-lesson",
+    :color=>"5BC0EB",
+    :default=>false},
+   {:id=>873302520,
+    :url=>"https://api.github.com/repos/leka/LKCurriculumsData/labels/1-C1",
+    :name=>"1-C1",
+    :color=>"c6e222",
+    :default=>false},
+   {:id=>872352811,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/9-medium",
+    :name=>"9-medium",
+    :color=>"E97758",
+    :default=>false},
+   {:id=>872336462,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/in%20progress",
+    :name=>"in progress",
+    :color=>"FDEF8D",
+    :default=>false}],
+ :state=>"open",
+ :locked=>false,
+ :assignee=>
+  {:login=>"ladislas",
+   :id=>2206544,
+   :avatar_url=>"https://avatars1.githubusercontent.com/u/2206544?v=4",
+   :gravatar_id=>"",
+   :url=>"https://api.github.com/users/ladislas",
+   :html_url=>"https://github.com/ladislas",
+   :followers_url=>"https://api.github.com/users/ladislas/followers",
+   :following_url=>
+    "https://api.github.com/users/ladislas/following{/other_user}",
+   :gists_url=>"https://api.github.com/users/ladislas/gists{/gist_id}",
+   :starred_url=>
+    "https://api.github.com/users/ladislas/starred{/owner}{/repo}",
+   :subscriptions_url=>"https://api.github.com/users/ladislas/subscriptions",
+   :organizations_url=>"https://api.github.com/users/ladislas/orgs",
+   :repos_url=>"https://api.github.com/users/ladislas/repos",
+   :events_url=>"https://api.github.com/users/ladislas/events{/privacy}",
+   :received_events_url=>
+    "https://api.github.com/users/ladislas/received_events",
+   :type=>"User",
+   :site_admin=>false},
+ :assignees=>
+  [{:login=>"ladislas",
+    :id=>2206544,
+    :avatar_url=>"https://avatars1.githubusercontent.com/u/2206544?v=4",
+    :gravatar_id=>"",
+    :url=>"https://api.github.com/users/ladislas",
+    :html_url=>"https://github.com/ladislas",
+    :followers_url=>"https://api.github.com/users/ladislas/followers",
+    :following_url=>
+     "https://api.github.com/users/ladislas/following{/other_user}",
+    :gists_url=>"https://api.github.com/users/ladislas/gists{/gist_id}",
+    :starred_url=>
+     "https://api.github.com/users/ladislas/starred{/owner}{/repo}",
+    :subscriptions_url=>"https://api.github.com/users/ladislas/subscriptions",
+    :organizations_url=>"https://api.github.com/users/ladislas/orgs",
+    :repos_url=>"https://api.github.com/users/ladislas/repos",
+    :events_url=>"https://api.github.com/users/ladislas/events{/privacy}",
+    :received_events_url=>
+     "https://api.github.com/users/ladislas/received_events",
+    :type=>"User",
+    :site_admin=>false}],
+ :milestone=>nil,
+ :comments=>0,
+ :created_at=>2018-03-21 13:42:08 UTC,
+ :updated_at=>2018-03-21 17:15:08 UTC,
+ :closed_at=>nil,
+ :author_association=>"OWNER",
+ :body=>
+  "🚧 Make sure you've done the following:\r\n" +
+  "\r\n" +
+  "- [x] set the title\r\n" +
+  "- [x] select the labels\r\n" +
+  "- [x] fill in all the information\r\n" +
+  "- [x] add the lesson content in every language\r\n" +
+  "- [x] add a second comment to explain how the lesson is going to work for our developers\r\n" +
+  "\r\n" +
+  "```yaml\r\n" +
+  "---\r\n" +
+  "# For more information, follow the guide: https://git.io/vxZui\r\n" +
+  "uuid: 40A4BFFE0DD14B26BA2C5B3C7A43D910\r\n" +
+  "id: c1l2\r\n" +
+  "\r\n" +
+  "author: Leka SAS\r\n" +
+  "email: alpha@leka.io\r\n" +
+  "\r\n" +
+  "date:\r\n" +
+  "  creation: 2017-09-01 00:00:00\r\n" +
+  "  update: 2018-03-09 16:30:00\r\n" +
+  "\r\n" +
+  "img: c1l1-1\r\n" +
+  "\r\n" +
+  "languages:\r\n" +
+  "  - en_US\r\n" +
+  "  - fr_FR\r\n" +
+  "\r\n" +
+  "en_US:\r\n" +
+  "  title: Paying attention to Leka\r\n" +
+  "  short_description: The child has to pay attention to Leka when asked\r\n" +
+  "\r\n" +
+  "fr_FR:\r\n" +
+  "  title: Porter attention à Leka\r\n" +
+  "  short_description: L'enfant doit porter attention à Leka lorsqu'on le lui demande\r\n" +
+  "\r\n" +
+  "sequence: [5]\r\n" +
+  "\r\n" +
+  "app_type: 1\r\n" +
+  "app_args:\r\n" +
+  "---\r\n" +
+  "```\r\n" +
+  "---\r\n" +
+  "\r\n" +
+  "{{{{{{ lang: fr_FR\r\n" +
+  "\r\n" +
+  "## Objectif\r\n" +
+  "\r\n" +
+  "Lorsqu'on lui demande, l'enfant doit regarder Leka\r\n" +
+  "\r\n" +
+  "## Consigne pour l’enfant\r\n" +
+  "\r\n" +
+  "> Regarde Leka\r\n" +
+  "\r\n" +
+  "*La consigne verbale doit être donnée lorsque l’enfant ne regarde **pas** Leka.*\r\n" +
+  "\r\n" +
+  "## Matériel\r\n" +
+  "\r\n" +
+  "Optionnel :\r\n" +
+  "\r\n" +
+  "- Chaise, cerceau ou autre pour matérialiser la place de l’enfant\r\n" +
+  "\r\n" +
+  "## Préparation de la séance\r\n" +
+  "\r\n" +
+  "1. Lancez la leçon en sélectionnant le bouton <span class=\"playButton\">Play</span>\r\n" +
+  "1. Leka lance une séquence de motivateurs (lumières et petits mouvements sur place) pendant 20 secondes qui vous permet d’introduire le robot auprès de l'enfant\r\n" +
+  "1. Après les 20 secondes, placez Leka au centre de la pièce\r\n" +
+  "1. Demandez à l’enfant de s’asseoir (par-terre ou sur une chaise) à distance du robot\r\n" +
+  "\r\n" +
+  "## Déroulé\r\n" +
+  "\r\n" +
+  "1. Assurez-vous que l’enfant ne regarde pas déjà Leka et incitez verbalement l’enfant à <span class=\"instruction\">regarder Leka</span>\r\n" +
+  "1. Lorsque l’enfant regarde Leka, sélectionnez le bouton correspondant au niveau de guidance réalisé\r\n" +
+  "1. Leka lance alors un renforçateur. **Renforcez socialement l'enfant** en même temps.\r\n" +
+  "1. Si malgré la guidance effectuée l’enfant n’a pas voulu/pu répondre à la consigne, sélectionnez le bouton <span class=\"failButton\">Échec</span>\r\n" +
+  "1. **Entre chaque essai, faites diversion**, par exemple en lui faisant des chatouilles ou en lui demandant de frapper dans ses mains\r\n" +
+  "\r\n" +
+  "## Séquence\r\n" +
+  "\r\n" +
+  "Répétez le déroulé **5 fois**.\r\n" +
+  "\r\n" +
+  "Entre chaque essai, assurez-vous que l’enfant ait détourné son attention de Leka.\r\n" +
+  "\r\n" +
+  "## Validation de la leçon\r\n" +
+  "\r\n" +
+  "La leçon est validée lorsque **4 essais sur les 5** ont été réalisés sans guidance ou avec guidance partielle.\r\n" +
+  "\r\n" +
+  "}}}}}} lang: fr_FR\r\n" +
+  "\r\n" +
+  "---\r\n" +
+  "\r\n" +
+  "{{{{{{ lang: en_US\r\n" +
+  "\r\n" +
+  "## Goal\r\n" +
+  "\r\n" +
+  "When asked, the child should look at Leka.\r\n" +
+  "\r\n" +
+  "## Instructions given to the child\r\n" +
+  "\r\n" +
+  "> Look at Leka  \r\n" +
+  "\r\n" +
+  "*Verbal instructions must be given when the child does **NOT** look at Leka.*\r\n" +
+  "\r\n" +
+  "## Equipment\r\n" +
+  "\r\n" +
+  "Optional :\r\n" +
+  "\r\n" +
+  "- A seat, a hoop or another object materializing the child’s departure point \r\n" +
+  "\r\n" +
+  "## Preparation of the session\r\n" +
+  "\r\n" +
+  "1. Start the lesson by pressing the button <span class=\"playButton\">Play</span>\r\n" +
+  "1. Leka launches a \"motivators\" sequence (lights and small movements in place) for 20 seconds, allowing you to introduce Leka to the child\r\n" +
+  "1. After these 20 seconds, put Leka in the center of the room\r\n" +
+  "1. Ask the child to sit (on the floor or on a seat) away from the robot\r\n" +
+  "\r\n" +
+  "\r\n" +
+  "## Steps\r\n" +
+  "\r\n" +
+  "1. Make sure that the child is not already looking at Leka and verbally encourage the child to look at Leka <span class=\"instruction\">look at</span>\r\n" +
+  "1. When the child looks at Leka, select the button corresponding to the level of guidance you realized\r\n" +
+  "1. Leka then launches a reinforcer. **Socially reinforce the child** at the same time\r\n" +
+  "1. If, despite the guidance, the child did not want / could not respond to the instructions, select the <span class = \"failButton\">Fail</ span> button\r\n" +
+  "1. **Between each trial, make diversion**, for example tickling the child or asking him to clap his hands\r\n" +
+  "\r\n" +
+  "\r\n" +
+  "## Sequence\r\n" +
+  "\r\n" +
+  "Repeat the steps **5 times**.\r\n" +
+  "\r\n" +
+  "Between each trial, make sure that the child draws his attention away from Leka\r\n" +
+  "\r\n" +
+  "## How to validate the lesson\r\n" +
+  "\r\n" +
+  "The lesson is validated when **4 times out of the 5** were realized without guidance or with partial guidance.\r\n" +
+  "\r\n" +
+  "}}}}}} lang: en_US\r\n"}
+,
+ {:url=>"https://api.github.com/repos/leka/LKCurriculumsData/issues/6",
+ :repository_url=>"https://api.github.com/repos/leka/LKCurriculumsData",
+ :labels_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/6/labels{/name}",
+ :comments_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/6/comments",
+ :events_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/6/events",
+ :html_url=>"https://github.com/leka/LKCurriculumsData/issues/6",
+ :id=>306794464,
+ :number=>6,
+ :title=>
+  "Curriculum - C1 - Travailler la demande / Improving asking initiation",
+ :user=>
+  {:login=>"ladislas",
+   :id=>2206544,
+   :avatar_url=>"https://avatars1.githubusercontent.com/u/2206544?v=4",
+   :gravatar_id=>"",
+   :url=>"https://api.github.com/users/ladislas",
+   :html_url=>"https://github.com/ladislas",
+   :followers_url=>"https://api.github.com/users/ladislas/followers",
+   :following_url=>
+    "https://api.github.com/users/ladislas/following{/other_user}",
+   :gists_url=>"https://api.github.com/users/ladislas/gists{/gist_id}",
+   :starred_url=>
+    "https://api.github.com/users/ladislas/starred{/owner}{/repo}",
+   :subscriptions_url=>"https://api.github.com/users/ladislas/subscriptions",
+   :organizations_url=>"https://api.github.com/users/ladislas/orgs",
+   :repos_url=>"https://api.github.com/users/ladislas/repos",
+   :events_url=>"https://api.github.com/users/ladislas/events{/privacy}",
+   :received_events_url=>
+    "https://api.github.com/users/ladislas/received_events",
+   :type=>"User",
+   :site_admin=>false},
+ :labels=>
+  [{:id=>872339163,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/0-curriculum",
+    :name=>"0-curriculum",
+    :color=>"78CBEE",
+    :default=>false},
+   {:id=>873302520,
+    :url=>"https://api.github.com/repos/leka/LKCurriculumsData/labels/1-C1",
+    :name=>"1-C1",
+    :color=>"c6e222",
+    :default=>false},
+   {:id=>872352811,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/9-medium",
+    :name=>"9-medium",
+    :color=>"E97758",
+    :default=>false},
+   {:id=>872337353,
+    :url=>"https://api.github.com/repos/leka/LKCurriculumsData/labels/ready",
+    :name=>"ready",
+    :color=>"00ccff",
+    :default=>false}],
+ :state=>"open",
+ :locked=>false,
+ :assignee=>nil,
+ :assignees=>[],
+ :milestone=>nil,
+ :comments=>0,
+ :created_at=>2018-03-20 09:52:40 UTC,
+ :updated_at=>2018-03-21 17:08:22 UTC,
+ :closed_at=>nil,
+ :author_association=>"OWNER",
+ :body=>
+  "```yaml\r\n" +
+  "---\r\n" +
+  "# For more information, follow the guide: https://git.io/vxZui\r\n" +
+  "uuid: 4DBE9DB9482F481E992AAE52A3E20EDE\r\n" +
+  "id: 1\r\n" +
+  "\r\n" +
+  "author: Leka SAS\r\n" +
+  "email: alpha@leka.io\r\n" +
+  "\r\n" +
+  "date:\r\n" +
+  "  creation: 2017-09-01 00:00:00\r\n" +
+  "  update: 2018-03-09 16:30:00\r\n" +
+  "\r\n" +
+  "img: c1\r\n" +
+  "\r\n" +
+  "languages:\r\n" +
+  "  - en_US\r\n" +
+  "  - fr_FR\r\n" +
+  "\r\n" +
+  "en_US:\r\n" +
+  "  title: Improving asking initiation\r\n" +
+  "  short_description: The main goal is to help the children work on their asking skills\r\n" +
+  "\r\n" +
+  "fr_FR:\r\n" +
+  "  title: Travailler la demande\r\n" +
+  "  short_description: L'objectif ici est d'inciter l'enfant à travailler la demande en instancier du jeu spontané de la part de l'enfant.\r\n" +
+  "\r\n" +
+  "lessons:\r\n" +
+  "  - 06C5F503A27B46F5886E13EBD53602F5\r\n" +
+  "  - 40A4BFFE0DD14B26BA2C5B3C7A43D910\r\n" +
+  "  - 06EFB99B5A234734A9B3752AEEF395D6\r\n" +
+  "  - 7955D667C5694BD2B5E29B9A07BF69A9\r\n" +
+  "  - 1775D9DB5B384E95B936BCEFE8B87C89\r\n" +
+  "  - 74263BC90B054F42AF68E2B1FCA1E3DA\r\n" +
+  "  - 758FAE5AFD83488CA62A06298B286BDD\r\n" +
+  "---\r\n" +
+  "```"}
+,
+ {:url=>"https://api.github.com/repos/leka/LKCurriculumsData/issues/5",
+ :repository_url=>"https://api.github.com/repos/leka/LKCurriculumsData",
+ :labels_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/5/labels{/name}",
+ :comments_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/5/comments",
+ :events_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/5/events",
+ :html_url=>"https://github.com/leka/LKCurriculumsData/issues/5",
+ :id=>306565576,
+ :number=>5,
+ :title=>"C5L5",
+ :user=>
+  {:login=>"ladislas",
+   :id=>2206544,
+   :avatar_url=>"https://avatars1.githubusercontent.com/u/2206544?v=4",
+   :gravatar_id=>"",
+   :url=>"https://api.github.com/users/ladislas",
+   :html_url=>"https://github.com/ladislas",
+   :followers_url=>"https://api.github.com/users/ladislas/followers",
+   :following_url=>
+    "https://api.github.com/users/ladislas/following{/other_user}",
+   :gists_url=>"https://api.github.com/users/ladislas/gists{/gist_id}",
+   :starred_url=>
+    "https://api.github.com/users/ladislas/starred{/owner}{/repo}",
+   :subscriptions_url=>"https://api.github.com/users/ladislas/subscriptions",
+   :organizations_url=>"https://api.github.com/users/ladislas/orgs",
+   :repos_url=>"https://api.github.com/users/ladislas/repos",
+   :events_url=>"https://api.github.com/users/ladislas/events{/privacy}",
+   :received_events_url=>
+    "https://api.github.com/users/ladislas/received_events",
+   :type=>"User",
+   :site_admin=>false},
+ :labels=>
+  [{:id=>872339446,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/0-lesson",
+    :name=>"0-lesson",
+    :color=>"5BC0EB",
+    :default=>false},
+   {:id=>872354023,
+    :url=>"https://api.github.com/repos/leka/LKCurriculumsData/labels/1-C5",
+    :name=>"1-C5",
+    :color=>"9BC53D",
+    :default=>false},
+   {:id=>872352811,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/9-medium",
+    :name=>"9-medium",
+    :color=>"E97758",
+    :default=>false},
+   {:id=>872337353,
+    :url=>"https://api.github.com/repos/leka/LKCurriculumsData/labels/ready",
+    :name=>"ready",
+    :color=>"00ccff",
+    :default=>false}],
+ :state=>"open",
+ :locked=>false,
+ :assignee=>nil,
+ :assignees=>[],
+ :milestone=>nil,
+ :comments=>0,
+ :created_at=>2018-03-19 17:46:15 UTC,
+ :updated_at=>2018-03-19 20:37:41 UTC,
+ :closed_at=>nil,
+ :author_association=>"OWNER",
+ :body=>
+  "```yaml\r\n" +
+  "---\r\n" +
+  "uuid: c5l5\r\n" +
+  "languages:\r\n" +
+  "  - en_US\r\n" +
+  "  - fr_FR\r\n" +
+  "\r\n" +
+  "en_US:\r\n" +
+  "  title: Hello World\r\n" +
+  "  short_description: Say hello to the world\r\n" +
+  "\r\n" +
+  "fr_FR:\r\n" +
+  "  title: Bonjour le monde\r\n" +
+  "  short_description: Dire bonjour au monde\r\n" +
+  "\r\n" +
+  "sequence: [2,2,2,2,2]\r\n" +
+  "\r\n" +
+  "img: c1l1-1\r\n" +
+  "---\r\n" +
+  "```\r\n" +
+  "\r\n" +
+  "\r\n" +
+  "{{{{{{ lang: fr_FR\r\n" +
+  "\r\n" +
+  "# Titre 1\r\n" +
+  "\r\n" +
+  "> une citation très belle\r\n" +
+  "\r\n" +
+  "## Titre 2\r\n" +
+  "\r\n" +
+  "Du contenu intéressant\r\n" +
+  "\r\n" +
+  "  - item 1\r\n" +
+  "  - item 2\r\n" +
+  "  - item 3\r\n" +
+  "\r\n" +
+  "}}}}}} lang: fr_FR\r\n" +
+  "\r\n" +
+  "\r\n" +
+  "{{{{{{ lang: en_US\r\n" +
+  "\r\n" +
+  "# Heading 1\r\n" +
+  "\r\n" +
+  "> a beautiful quote \r\n" +
+  "\r\n" +
+  "## Heading 2\r\n" +
+  "\r\n" +
+  "Some content\r\n" +
+  "\r\n" +
+  "  - item 1\r\n" +
+  "  - item 2\r\n" +
+  "  - item 3\r\n" +
+  "\r\n" +
+  "}}}}}} lang: en_US\r\n"}
+,
+ {:url=>"https://api.github.com/repos/leka/LKCurriculumsData/issues/4",
+ :repository_url=>"https://api.github.com/repos/leka/LKCurriculumsData",
+ :labels_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/4/labels{/name}",
+ :comments_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/4/comments",
+ :events_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/4/events",
+ :html_url=>"https://github.com/leka/LKCurriculumsData/issues/4",
+ :id=>306392944,
+ :number=>4,
+ :title=>"C5L1",
+ :user=>
+  {:login=>"ladislas",
+   :id=>2206544,
+   :avatar_url=>"https://avatars1.githubusercontent.com/u/2206544?v=4",
+   :gravatar_id=>"",
+   :url=>"https://api.github.com/users/ladislas",
+   :html_url=>"https://github.com/ladislas",
+   :followers_url=>"https://api.github.com/users/ladislas/followers",
+   :following_url=>
+    "https://api.github.com/users/ladislas/following{/other_user}",
+   :gists_url=>"https://api.github.com/users/ladislas/gists{/gist_id}",
+   :starred_url=>
+    "https://api.github.com/users/ladislas/starred{/owner}{/repo}",
+   :subscriptions_url=>"https://api.github.com/users/ladislas/subscriptions",
+   :organizations_url=>"https://api.github.com/users/ladislas/orgs",
+   :repos_url=>"https://api.github.com/users/ladislas/repos",
+   :events_url=>"https://api.github.com/users/ladislas/events{/privacy}",
+   :received_events_url=>
+    "https://api.github.com/users/ladislas/received_events",
+   :type=>"User",
+   :site_admin=>false},
+ :labels=>
+  [{:id=>872339446,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/0-lesson",
+    :name=>"0-lesson",
+    :color=>"5BC0EB",
+    :default=>false},
+   {:id=>872354023,
+    :url=>"https://api.github.com/repos/leka/LKCurriculumsData/labels/1-C5",
+    :name=>"1-C5",
+    :color=>"9BC53D",
+    :default=>false},
+   {:id=>872352811,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/9-medium",
+    :name=>"9-medium",
+    :color=>"E97758",
+    :default=>false},
+   {:id=>872336462,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/in%20progress",
+    :name=>"in progress",
+    :color=>"FDEF8D",
+    :default=>false}],
+ :state=>"open",
+ :locked=>false,
+ :assignee=>nil,
+ :assignees=>[],
+ :milestone=>nil,
+ :comments=>1,
+ :created_at=>2018-03-19 09:48:11 UTC,
+ :updated_at=>2018-03-19 21:46:28 UTC,
+ :closed_at=>nil,
+ :author_association=>"OWNER",
+ :body=>
+  "```yaml\r\n" +
+  "---\r\n" +
+  "uuid: c5l1\r\n" +
+  "languages:\r\n" +
+  "  - en_US\r\n" +
+  "  - fr_FR\r\n" +
+  "\r\n" +
+  "en_US:\r\n" +
+  "  title: Hello World\r\n" +
+  "  short_description: Say hello to the world\r\n" +
+  "\r\n" +
+  "fr_FR:\r\n" +
+  "  title: Bonjour le monde\r\n" +
+  "  short_description: Dire bonjour au monde\r\n" +
+  "\r\n" +
+  "sequence: [2,2,2,2,2]\r\n" +
+  "\r\n" +
+  "img: c1l1-1\r\n" +
+  "---\r\n" +
+  "```\r\n" +
+  "\r\n" +
+  "\r\n" +
+  "{{{{{{ lang: fr_FR\r\n" +
+  "\r\n" +
+  "# Titre 1\r\n" +
+  "\r\n" +
+  "> une citation très belle\r\n" +
+  "\r\n" +
+  "## Titre 2\r\n" +
+  "\r\n" +
+  "Du contenu intéressant\r\n" +
+  "\r\n" +
+  "  - item 1\r\n" +
+  "  - item 2\r\n" +
+  "  - item 3\r\n" +
+  "\r\n" +
+  "}}}}}} lang: fr_FR\r\n" +
+  "\r\n" +
+  "\r\n" +
+  "{{{{{{ lang: en_US\r\n" +
+  "\r\n" +
+  "# Heading 1\r\n" +
+  "\r\n" +
+  "> a beautiful quote \r\n" +
+  "\r\n" +
+  "## Heading 2\r\n" +
+  "\r\n" +
+  "Some content\r\n" +
+  "\r\n" +
+  "  - item 1\r\n" +
+  "  - item 2\r\n" +
+  "  - item 3\r\n" +
+  "\r\n" +
+  "}}}}}} lang: en_US\r\n"}
+,
+ {:url=>"https://api.github.com/repos/leka/LKCurriculumsData/issues/3",
+ :repository_url=>"https://api.github.com/repos/leka/LKCurriculumsData",
+ :labels_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/3/labels{/name}",
+ :comments_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/3/comments",
+ :events_url=>
+  "https://api.github.com/repos/leka/LKCurriculumsData/issues/3/events",
+ :html_url=>"https://github.com/leka/LKCurriculumsData/issues/3",
+ :id=>306390832,
+ :number=>3,
+ :title=>"C5",
+ :user=>
+  {:login=>"ladislas",
+   :id=>2206544,
+   :avatar_url=>"https://avatars1.githubusercontent.com/u/2206544?v=4",
+   :gravatar_id=>"",
+   :url=>"https://api.github.com/users/ladislas",
+   :html_url=>"https://github.com/ladislas",
+   :followers_url=>"https://api.github.com/users/ladislas/followers",
+   :following_url=>
+    "https://api.github.com/users/ladislas/following{/other_user}",
+   :gists_url=>"https://api.github.com/users/ladislas/gists{/gist_id}",
+   :starred_url=>
+    "https://api.github.com/users/ladislas/starred{/owner}{/repo}",
+   :subscriptions_url=>"https://api.github.com/users/ladislas/subscriptions",
+   :organizations_url=>"https://api.github.com/users/ladislas/orgs",
+   :repos_url=>"https://api.github.com/users/ladislas/repos",
+   :events_url=>"https://api.github.com/users/ladislas/events{/privacy}",
+   :received_events_url=>
+    "https://api.github.com/users/ladislas/received_events",
+   :type=>"User",
+   :site_admin=>false},
+ :labels=>
+  [{:id=>872339163,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/0-curriculum",
+    :name=>"0-curriculum",
+    :color=>"78CBEE",
+    :default=>false},
+   {:id=>872354023,
+    :url=>"https://api.github.com/repos/leka/LKCurriculumsData/labels/1-C5",
+    :name=>"1-C5",
+    :color=>"9BC53D",
+    :default=>false},
+   {:id=>872352811,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/9-medium",
+    :name=>"9-medium",
+    :color=>"E97758",
+    :default=>false},
+   {:id=>872336791,
+    :url=>
+     "https://api.github.com/repos/leka/LKCurriculumsData/labels/needs%20review",
+    :name=>"needs review",
+    :color=>"FFDF5B",
+    :default=>false}],
+ :state=>"open",
+ :locked=>false,
+ :assignee=>nil,
+ :assignees=>[],
+ :milestone=>nil,
+ :comments=>0,
+ :created_at=>2018-03-19 09:41:36 UTC,
+ :updated_at=>2018-03-20 09:28:25 UTC,
+ :closed_at=>nil,
+ :author_association=>"OWNER",
+ :body=>
+  "```yaml\r\n" +
+  "---\r\n" +
+  "uuid: c5\r\n" +
+  "author: Leka Inc.\r\n" +
+  "\r\n" +
+  "languages:\r\n" +
+  "  - en_US\r\n" +
+  "  - fr_FR\r\n" +
+  "\r\n" +
+  "en_US:\r\n" +
+  "  title: Hello World\r\n" +
+  "  short_description: Say hello to the world\r\n" +
+  "\r\n" +
+  "fr_FR:\r\n" +
+  "  title: Bonjour la terre\r\n" +
+  "  short_description: Dire bonjour au monde\r\n" +
+  "\r\n" +
+  "img: c5\r\n" +
+  "\r\n" +
+  "lessons: c5l1, c5l2, c5l3\r\n" +
+  "\r\n" +
+  "---\r\n" +
+  "```"}
+]

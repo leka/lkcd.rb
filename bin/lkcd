@@ -153,6 +153,8 @@ command :pull do |c|
 
 		end
 
+		puts
+
 
 
 		# labels = (stage + type + curriculums).join(',')
